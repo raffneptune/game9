@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #33383f;
+}
+.heading {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  border-radius: 5px;
+  padding: 0 10px;
+  background-color: #555;
+}
+.cells {
+  display: flex;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid #05ccab;
+}
+.cell img {
+  width: 90%;
+}
+.cell.one {
+  border-top: none;
+  border-left: none;
+}
+.cell.two {
+  border-top: none;
+}
+.cell.three {
+  border-top: none;
+  border-right: none;
+}
+.cell.four {
+  border-left: none;
+}
+.cell.six {
+  border-right: none;
+}
+.cell.seven {
+  border-left: none;
+  border-bottom: none;
+}
+.cell.eight {
+  border-bottom: none;
+}
+.cell.nine {
+  border-bottom: none;
+  border-right: none;
+}
+.score {
+  margin-top: 20px;
+  text-align: center;
+}
+.score-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+.resetBtn {
+  text-transform: uppercase;
+  margin: 20px auto;
+  display: block;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #555;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.resetBtn:hover {
+  background-color: #333;
+}
+.toast {
+  text-transform: uppercase;
+  background-color: #555;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  opacity: 0;
+  transition: top 0.3s ease, opacity 0.3s ease;
+  transform: translateX(-50%);
+}
+.toast.show {
+  opacity: 1;
+  top: 50px;
+}
